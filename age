@@ -1,0 +1,6 @@
+print("Unique values and their counts in 'age' column:")
+print(df['age'].value_counts(dropna=False))
+print("\nValue counts for account_balance with minimum -99999:")
+print(df[df['account_balance'] == -99999.0]['account_balance'].count())
+print("\nValue counts for transaction_hour with maximum 28:")
+print(df[df['transaction_hour'] == 28.0]['transaction_hour'].count())
